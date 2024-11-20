@@ -1,0 +1,18 @@
+meta {
+  name: Adicionar TP
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8080/turma-professor
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id_turma":3,
+    "id_professor":3
+  }
+}

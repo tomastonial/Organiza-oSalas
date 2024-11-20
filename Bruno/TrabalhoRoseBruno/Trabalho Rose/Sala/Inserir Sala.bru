@@ -1,0 +1,19 @@
+meta {
+  name: Inserir Sala
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8080/sala
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "nome":"Sala 201",
+    "capacidade":25,
+    "localidade":"2º Andar"
+  }
+}

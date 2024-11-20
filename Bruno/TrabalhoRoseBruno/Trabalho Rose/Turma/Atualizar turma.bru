@@ -1,0 +1,19 @@
+meta {
+  name: Atualizar turma
+  type: http
+  seq: 3
+}
+
+put {
+  url: http://localhost:8080/turma/3
+  body: json
+  auth: none
+}
+
+body:json {
+    {
+      "id": 3,
+      "nome": "ADS 2º SEMESTRE",
+      "quantidadeAluno": 20
+    }
+}

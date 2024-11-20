@@ -1,0 +1,18 @@
+meta {
+  name: Inserir turma
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8080/turma
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "nome":"ADS 2º SEMESTRE",
+    "quantidadeAluno":20
+  }
+}

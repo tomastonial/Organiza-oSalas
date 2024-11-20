@@ -1,0 +1,20 @@
+meta {
+  name: Nova reserva
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8080/reserva
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id_materia":5,
+    "id_sala":1,
+    "id_professor":3,
+    "id_turma":3
+  }
+}

@@ -1,0 +1,18 @@
+meta {
+  name: Inserir materia
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8080/materia
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "nome":"Real Case",
+    "id_professor":3
+  }
+}
